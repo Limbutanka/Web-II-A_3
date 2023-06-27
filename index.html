@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to My Shop</title>
+  <style>
+   
+    .container {
+      display: flex;
+      text-align: center;
+    }
+    h1{
+      text-align: center;
+      
+    }
+
+    .left-section {
+      flex: 1;
+      padding: 10px;
+      background-color: #f2f2f2;
+      height: 500px;
+      background-color: green;
+    }
+
+    .right-section {
+      flex: 3;
+      padding: 10px;
+      background-color: #ffffff;
+      height: 500px;
+    }
+
+    .tshirt-image {
+      width: 100px;
+      height: 100px;
+      margin: 2px;
+      cursor: pointer;
+      
+    }
+
+    .big-image {
+      width: 400px;
+      height: 500px;
+    }
+  </style>
+</head>
+<body>
+  <h1>WELCOME TO MY SHOP</h1>
+
+  <div class="container">
+    <div class="left-section">
+    
+      <img class="tshirt-image" src="Real Madrid.webp" alt="Real Madrid" onclick="showBigImage('Real Madrid.webp')">
+      <img class="tshirt-image" src="Barcelona.webp" alt="Barcelona" onclick="showBigImage('Barcelona.webp')">
+      <img class="tshirt-image" src="Arsenal.webp" alt="Arsenal" onclick="showBigImage('Arsenal.webp')">
+      <img class="tshirt-image" src="Atletico.webp" alt="Atletico" onclick="showBigImage('Atletico.webp')">
+      <img class="tshirt-image" src="City.webp" alt="City" onclick="showBigImage('City.webp')">
+      <img class="tshirt-image" src="Chelsea.png" alt="Chelsea" onclick="showBigImage('Chelsea.png')">
+      <img class="tshirt-image" src="Juventus.webp" alt="Juventus" onclick="showBigImage('Juventus.webp')">
+      <img class="tshirt-image" src="Napoli.jpeg" alt="Napoli" onclick="showBigImage('Napoli.jpeg')">
+    </div>
+
+    <div class="right-section">
+     
+      <img id="bigImage" class="big-image" src="" alt="Big Image">
+    </div>
+  </div>
+
+  <script>
+    function showBigImage(imageUrl) {
+      var bigImage = document.getElementById('bigImage');
+      bigImage.src = imageUrl;
+    }
+  </script>
+</body>
+</html>
